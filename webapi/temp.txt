@@ -1,0 +1,6 @@
+mail: xicep17138@hapremx.com
+password for mail: cjtai5cjtai5
+
+mongodb
+username: gabriella
+paswd: something123
