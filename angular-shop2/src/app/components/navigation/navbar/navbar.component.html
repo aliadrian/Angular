@@ -1,0 +1,44 @@
+<!--Navbar -->
+<nav class="mb-1 navbar navbar-expand-lg navbar-light bg-light fixed-top scrolling-navbar">
+  <div class="container">
+    <a routerLink="/" class="navbar-brand navbar-light">
+      <i class="fab fa-bitbucket"></i> Shop
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+      aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+      <ul class="navbar-nav mr-auto text-right">
+
+        <li class="nav-item">
+          <a class="nav-link closeNav" routerLink="profile">Profile</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto nav-flex-icons float-right">
+        <!-- ShoppingCart -->
+        <li class="nav-item dropdown">
+          <a class="nav-link mr-4" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{totalCart()}}
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right z-depth-2 shopping-cart" (click)="onEvent($event)">
+            <app-shopping-cart></app-shopping-cart>
+          </div>
+        </li>
+
+        <!-- UserSettings -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <i class="fas fa-user"></i>
+          </a>
+         
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--/.Navbar -->
